@@ -1,0 +1,18 @@
+
+.title-add{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-add span{
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.title-add button{
+  background-color: #34CCC6;
+}
+
+.emp-detials-tables{
+  width: 100%;
+}

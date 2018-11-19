@@ -1,0 +1,60 @@
+.sign-in-card{
+    margin: 1%;
+    width: 95vw;
+    height: 85vh;
+    background-color: #5453A4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.header{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 32px;
+}
+
+form input{
+    background-color: #302F74;
+    border-radius: 5px;
+    padding:10px;   
+    color: red;
+}
+
+
+
+.sigin-input, .checkbox-forgot{
+    width: 50%;
+}
+
+.checkbox-forgot{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-image: linear-gradient(to right, #34CCC6 , #92E2F9);
+    border-radius: 5px;
+    width: 50%;
+    margin: 2vh auto 10vh auto;
+
+}
+
+.signup-button{
+    color: white;  
+}
+
+.header{
+    color:white;
+    font-size:32px;
+}

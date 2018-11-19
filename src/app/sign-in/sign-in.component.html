@@ -1,0 +1,28 @@
+<mat-card class="sign-in-card">
+  <form>
+    <mat-card-header class="header">
+      <mat-card-title >Sign In</mat-card-title>
+      <mat-card-subtitle>Hello! Sign in with your username or email</mat-card-subtitle>
+    </mat-card-header>
+
+
+    <!-- input fileds -->
+    <mat-form-field class="sigin-input">
+      <input matInput placeholder="Email ID | Username"/>
+      
+    </mat-form-field>
+    <mat-form-field class="sigin-input">
+      <input matInput placeholder="Password" type="password"/>
+    </mat-form-field>
+
+    <!-- check boc and forgot -->
+    <div class="checkbox-forgot">
+        <mat-checkbox>Remember me</mat-checkbox>
+        <span>Forgot Password?</span>
+    </div>
+
+    <button mat-button>SIGN IN</button>      
+
+    <div class="signup-button" >Don't have an account? <a href="#">Sign Up</a></div>
+  </form>
+</mat-card>
