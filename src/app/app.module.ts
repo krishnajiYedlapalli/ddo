@@ -16,12 +16,12 @@ import { DetailsService } from './dashboard/empdetails/details.service';
 
 import {
   HttpModule
-} from '@angular/http'; // Import the http library
+} from '@angular/http'; 
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,materialArray,HttpModule],
-  declarations: [ AppComponent,SignInComponent,DashboardComponent,EmpdetailsComponent ],
+  declarations: [ AppComponent,SignInComponent,DashboardComponent,EmpdetailsComponent,EmpcountComponent ],
   bootstrap:    [ AppComponent ],
   providers:[DetailsService]
 })

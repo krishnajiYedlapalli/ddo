@@ -1,3 +1,10 @@
-<p>
-  empcount works!
-</p>
+
+<mat-card  *ngFor='let detail of cardDetails'  class="emp-count">
+        <div class="logo"  [style.background]=detail.styleType >
+            <img [src]=detail.image alt="no image" width="70%" height="70%">
+        </div>
+        <div class="type-count">
+        <span>{{detail.type}}</span>
+        <div>{{detail.count}}</div>
+    </div>
+  </mat-card>

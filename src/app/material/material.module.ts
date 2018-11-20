@@ -10,6 +10,7 @@ import {
   MatButtonModule,
   MatGridListModule,
 MatTableModule,
+MatTooltipModule
 } from "@angular/material";
 
 @NgModule({
@@ -20,7 +21,8 @@ MatTableModule,
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    MatTooltipModule
   ],
   declarations: [],
 })
@@ -33,5 +35,6 @@ export const materialArray = [
   MatCheckboxModule,
   MatButtonModule,
   MatGridListModule,
-  MatTableModule
+  MatTableModule,
+  MatTooltipModule
 ];

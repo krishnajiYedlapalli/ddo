@@ -1,7 +1,7 @@
 <mat-grid-list class="gridlist" cols="100" rows='100' rowHeight="fit">
 	<mat-grid-tile colspan=100 rowspan=10>
 		<mat-card>
-			hello
+			
 		</mat-card>
 	</mat-grid-tile>
 
@@ -12,15 +12,14 @@
 	</mat-grid-tile>
 
 
-	<mat-grid-tile colspan=85 rowspan=10 [style.background]="color">
-    	<mat-card class="emp-count">
-	     	hooo 	hello
-    		</mat-card>
+	<mat-grid-tile colspan=85 rowspan=15 >
+		<app-empcount  class="empcount"></app-empcount>
+    
 	
 	</mat-grid-tile>
 
 
-	<mat-grid-tile colspan=85 rowspan=80>
+	<mat-grid-tile colspan=85 rowspan=75>
 	
     	<mat-card class="emp-details">
 		<app-empdetails></app-empdetails>

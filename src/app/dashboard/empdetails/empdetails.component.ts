@@ -1,34 +1,35 @@
-import { Component, OnInit } from '@angular/core';
-import{DetailsService} from './details.service';
-import {
-  Http,
-  Response
-} from '@angular/http'; 
+import { Component, OnInit } from "@angular/core";
+import { DetailsService } from "./details.service";
 
-import 'rxjs/add/operator/map';
+import "rxjs/add/operator/map";
 @Component({
-  selector: 'app-empdetails',
-  templateUrl: './empdetails.component.html',
-  styleUrls: ['./empdetails.component.css']
+  selector: "app-empdetails",
+  templateUrl: "./empdetails.component.html",
+  styleUrls: ["./empdetails.component.css"]
 })
 export class EmpdetailsComponent implements OnInit {
-  // baseUrl: string = 'https://jsonplaceholder.typicode.com';
-  url='src/assets/employees.json'
-  todos: any[];
-  
-  constructor(private http:Http) { }
+  empInformation;
+  dataSource;
+  constructor(private empdetails: DetailsService) {
+    // subscribing the employee data
+    this.empdetails.subject.subscribe(value => {
+      this.dataSource = value;
+      console.log(value, "ghhjg");
+    });
+
+    
+  }
 
   ngOnInit() {
-    this.http
-    .get(this.url)
-    .map((res: Response) => res.json()) 
-    .subscribe(todos => {this.todos = todos; console.log('khj',todos)}); 
+    setTimeout(()=>
+       this.dataSource=this.dataSource.employee,0);
   }
-dataSource=[
-  {name:'krishna', roll:'12', area:'wer'},
-    {name:'krishna1', roll:'12', area:'wer'}
 
-]
+  // dataSource=[
+  //   {name:'krishna', roll:'12', area:'wer'},
+  //     {name:'krishna1', roll:'12', area:'wer'}
 
-displayedColumns: string[] = ['name', 'roll', 'area'];
+  // ]
+
+  displayedColumns: string[] = ["sno", "firstName", "lastName","emailId",'expDepartment','designation','joinDate','details'];
 }

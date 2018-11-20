@@ -1,62 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-
-body{
-    margin: 0%;
-    width: 100%;
-    height: 100%;
-    /* width: 100vw;
+body {
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+  /* width: 100vw;
     height: 100vh; */
-    background-color: #302F74;
+  background-color: #302f74;
 }
 
 /* .sigin-input */
-.sigin-input .mat-form-field-underline{
-    display: none;
+.sigin-input .mat-form-field-underline {
+  display: none;
 }
 
- .mat-card-header .mat-card-title{
-    color:white;
-    font-size: 20px;
+.mat-card-header .mat-card-title {
+  color: white;
+  font-size: 20px;
 }
 
- .mat-card-subtitle {
-    color:white;
-    font-size:13px;
+.mat-card-subtitle {
+  color: white;
+  font-size: 13px;
 }
 
 /* place holder color */
-.mat-form-field-label{
-    margin-top: 7px;
-    color: white;
-    font: italic bold 12px/30px Georgia, serif;
+.mat-form-field-label {
+  margin-top: 7px;
+  color: white;
+  font: italic bold 12px/30px Georgia, serif;
 }
 
-.mat-input-wrapper .mat-form-field-label{
-    left: 2%;
+.mat-input-wrapper .mat-form-field-label {
+  left: 2%;
 }
-.mat-form-field{
-    font-size: 12px;
+.mat-form-field {
+  font-size: 12px;
 }
 
+.gridlist mat-card {
+  background-color: #5453a4;
+  height: 100%;
+  width: 100%;
+}
 
-.gridlist mat-card{
-    background-color: #5453A4;
-    height: 100%;
-    width: 100%;
-  }
-  
-  
-   .gridlist .emp-details{
-       background-color: #5453A4;
-        width: 90%;
-        height: 90%;
-        margin: auto;
-        /* padding: 1% 2% 2% 2%; */
-   }
-  
-   .gridlist .emp-count{
-    background-color: #302F74;
-   }
+.gridlist .emp-details {
+  background-color: #5453a4;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  /* padding: 1% 2% 2% 2%; */
+}
+
+.gridlist .emp-count {
+  background-color: #302f74;
+}
+
+/* table */
+.mat-row:nth-child(odd) {
+  background-color: #302f74;
+}
+
+.mat-row:nth-child(even) {
+  background-color: #5453a4;
+}
+
+.mat-header-row {
+  background-color: rgb(51, 51, 175);
+}
+.employee-container .mat-row{
+           min-height: 35px;
+    
+        }
